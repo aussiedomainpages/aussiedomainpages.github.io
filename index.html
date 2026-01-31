@@ -34,13 +34,16 @@
 
 <script>
 var host = window.location.hostname.replace(/^www\./, '');
+var clean = host.replace('.github.io','');
+
 
 document.getElementById("domain").innerText = host;
 document.getElementById("title").innerText = host + " is for sale";
 document.getElementById("domainField").value = host;
 
 document.getElementById("ads-note").innerText =
-'Note: "' + host + '" is the name of the domain registrant\'s service that provides links to advertisements for services, goods, events or activities that may be of interest to you, based on the search term "' + host + '".';
+'Note: "' + clean + '" is the name of the domain registrant\'s service that provides links to advertisements for services, goods, events or activities that may be of interest to you, based on the search term "' + clean + '".';
+
 </script>
 
 
